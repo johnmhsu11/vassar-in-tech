@@ -13,6 +13,33 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
+// Clone panel toggle
+const cloneToggle = document.getElementById('cloneToggle');
+const clonePanel = document.getElementById('clonePanel');
+const cloneClose = document.getElementById('cloneClose');
+
+cloneToggle.addEventListener('click', () => {
+  clonePanel.hidden = false;
+  cloneToggle.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+});
+
+cloneClose.addEventListener('click', closeClonePanel);
+
+clonePanel.addEventListener('click', (e) => {
+  if (e.target === clonePanel) closeClonePanel();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !clonePanel.hidden) closeClonePanel();
+});
+
+function closeClonePanel() {
+  clonePanel.hidden = true;
+  cloneToggle.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
 // Navbar shadow on scroll
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {

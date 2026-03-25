@@ -163,8 +163,75 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 Vassar in Tech. A volunteer-led initiative.</p>
+      <button class="clone-toggle" id="cloneToggle" aria-expanded="false">&#60;/&#62;</button>
     </div>
   </footer>
+
+  <!-- CLONE GUIDE (hidden by default) -->
+  <div class="clone-panel" id="clonePanel" hidden>
+    <div class="clone-inner">
+      <div class="clone-header">
+        <h2>Clone This Website</h2>
+        <p>Everything you need to host an exact copy of this site yourself.</p>
+        <button class="clone-close" id="cloneClose" aria-label="Close">&times;</button>
+      </div>
+
+      <div class="clone-grid">
+
+        <div class="clone-card">
+          <div class="clone-step">1</div>
+          <h3>Tech Stack</h3>
+          <p>This is a plain static website — no framework, no build step, no dependencies. Just three files:</p>
+          <ul>
+            <li><code>index.html</code> — all page content and structure</li>
+            <li><code>styles.css</code> — all styling and layout</li>
+            <li><code>script.js</code> — mobile nav toggle and scroll behavior</li>
+            <li><code>logo.png</code> — the group logo</li>
+          </ul>
+          <p>It can be hosted anywhere that serves static files: Vercel, Netlify, GitHub Pages, etc.</p>
+        </div>
+
+        <div class="clone-card">
+          <div class="clone-step">2</div>
+          <h3>Get the Source Code</h3>
+          <p>The full source is publicly available on GitHub. Fork or clone it to your own account:</p>
+          <a href="https://github.com/johnmhsu11/vassar-in-tech" target="_blank" class="clone-link">github.com/johnmhsu11/vassar-in-tech &rarr;</a>
+          <div class="clone-code-block">
+            <span class="clone-code-label">Clone via terminal</span>
+            <code>git clone https://github.com/johnmhsu11/vassar-in-tech.git</code>
+          </div>
+          <p>Or click <strong>Fork</strong> on GitHub to create your own copy under your account.</p>
+        </div>
+
+        <div class="clone-card">
+          <div class="clone-step">3</div>
+          <h3>Deploy to Vercel (Recommended)</h3>
+          <ol>
+            <li>Create a free account at <a href="https://vercel.com" target="_blank" class="clone-link-inline">vercel.com</a></li>
+            <li>Click <strong>Add New Project</strong> and import your forked GitHub repo</li>
+            <li>Leave all settings as default — Vercel auto-detects static sites</li>
+            <li>Click <strong>Deploy</strong></li>
+          </ol>
+          <p>Your site will be live at <code>your-project-name.vercel.app</code> in under a minute. Future pushes to GitHub redeploy automatically.</p>
+        </div>
+
+        <div class="clone-card">
+          <div class="clone-step">4</div>
+          <h3>Customize the Content</h3>
+          <p>All content lives in <code>index.html</code>. Key things to update:</p>
+          <ul>
+            <li>Mission statement and leadership names in the <strong>About</strong> section</li>
+            <li>Event details in the <strong>Programming</strong> section</li>
+            <li>Contact email (<code>Alison.Lindland@gmail.com</code>)</li>
+            <li>LinkedIn group URL (<code>linkedin.com/groups/3732591</code>)</li>
+            <li>Colors in <code>styles.css</code> under <code>:root</code> — change <code>--maroon</code> and <code>--gray</code></li>
+            <li>Replace <code>logo.png</code> with your own logo (same filename)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
