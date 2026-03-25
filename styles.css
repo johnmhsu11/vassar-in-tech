@@ -108,6 +108,15 @@ ul {
   transform: translateY(-1px);
 }
 
+.nav-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -131,6 +140,15 @@ ul {
 
 .hero-content {
   max-width: 720px;
+}
+
+.hero-logo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.15), 0 8px 32px rgba(0,0,0,0.4);
 }
 
 .hero h1 {
@@ -402,10 +420,24 @@ ul {
   padding: 60px 2rem 40px;
 }
 
+.footer-brand-top {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
 .footer-brand .nav-brand {
   font-size: 1.15rem;
-  display: block;
-  margin-bottom: 0.75rem;
+  display: inline;
   color: var(--white);
 }
 
